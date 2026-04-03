@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水分補給レコード | AquaNest</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #eef7fb;
+        --panel: #ffffff;
+        --text: #17333b;
+        --muted: #5f7a83;
+        --line: #d7e7ee;
+        --accent: #2d9fb7;
+        --accent-soft: #dff3f8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic",
+          "Noto Sans JP", sans-serif;
+        background:
+          radial-gradient(circle at top, #f8fdff 0%, var(--bg) 52%, #e4f1f6 100%);
+        color: var(--text);
+      }
+
+      .wrap {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 56px;
+      }
+
+      .hero {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 32px;
+        box-shadow: 0 20px 40px rgba(25, 72, 86, 0.08);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(32px, 6vw, 52px);
+        line-height: 1.06;
+      }
+
+      .lead {
+        margin: 16px 0 0;
+        max-width: 640px;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.8;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .card {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: inherit;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        transition:
+          transform 160ms ease,
+          border-color 160ms ease,
+          box-shadow 160ms ease;
+      }
+
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(45, 159, 183, 0.4);
+        box-shadow: 0 16px 30px rgba(45, 159, 183, 0.14);
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 14px;
+      }
+
+      .notice {
+        margin-top: 24px;
+        padding: 18px 20px;
+        background: var(--accent-soft);
+        border: 1px solid #c5e7f0;
+        border-radius: 20px;
+        color: #245e6d;
+        line-height: 1.7;
+        font-size: 14px;
+      }
+
+      code {
+        word-break: break-all;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 2px 6px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <p class="eyebrow">AquaNest</p>
+        <h1>水分補給レコード</h1>
+        <p class="lead">
+          毎日の水分補給を無理なく続けるための、シンプルな記録アプリです。
+          サポート情報、プライバシーポリシー、利用規約は以下から確認できます。
+        </p>
+      </section>
+
+      <section class="grid" aria-label="support links">
+        <a class="card" href="https://aquanestapp-eng.github.io/aquanest-support/support.html">
+          <h2>サポート</h2>
+          <p>お問い合わせ先と、アプリ利用時のサポート案内を確認できます。</p>
+        </a>
+        <a class="card" href="https://aquanestapp-eng.github.io/aquanest-support/privacy.html">
+          <h2>プライバシーポリシー</h2>
+          <p>データの取り扱い、広告、通知などに関するポリシーを確認できます。</p>
+        </a>
+        <a class="card" href="https://aquanestapp-eng.github.io/aquanest-support/terms.html">
+          <h2>利用規約</h2>
+          <p>アプリの利用条件、禁止事項、免責事項を確認できます。</p>
+        </a>
+      </section>
+
+      <section class="notice">
+        app-ads.txt は <code>/app-ads.txt</code> で公開しています。
+      </section>
+    </main>
+  </body>
+</html>
